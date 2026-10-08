@@ -1,4 +1,9 @@
 # Hunter AI 内容工厂
+
+## Images
+
+[![hunter-ai-content-factory](https://opengraph.githubassets.com/1/https://github.com/Pangu-Immortal/hunter-ai-content-factory)](https://www.swifttechco.com)
+
 #### QQ群：794834282
 
 <p align="center">
@@ -7,9 +12,9 @@
 
 <div align="center">
 
-![Hunter AI](https://img.shields.io/badge/Hunter_AI-内容工厂-ff69b4?style=for-the-badge&logo=robot&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-2.0_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
+[![Hunter AI](https://img.shields.io/badge/Hunter_AI-内容工厂-ff69b4?style=for-the-badge&logo=robot&logoColor=white)](https://www.swifttechco.com)
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.swifttechco.com)
+[![Gemini](https://img.shields.io/badge/Gemini-2.0_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.swifttechco.com)
 
 [![Stars](https://img.shields.io/github/stars/Pangu-Immortal/hunter-ai-content-factory?style=flat-square&logo=github&color=pink)](https://swifttechco.com)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
@@ -21,7 +26,6 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://swifttechco.com)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://swifttechco.com)
 
-![萌萌计数器](https://count.getloli.com/get/@hunter-ai-content-factory?theme=rule34)
 
 **🎯 内容生产也可以像写代码一样，有输入、有输出、有质量保证**
 
@@ -39,7 +43,7 @@
 
 <div align="center">
 
-![Hunter AI 界面](preview2.png)
+[![Hunter AI 界面](preview2.png)](https://www.swifttechco.com)
 
 </div>
 
@@ -53,7 +57,6 @@
 
 ### 🔍 多平台数据采集
 - **GitHub Trending** - 热门开源项目
-- **Twitter/X** - 实时热点动态
 - **Reddit** - 社区讨论话题
 - **HackerNews** - 技术前沿资讯
 - **小红书** - 生活消费热点
@@ -148,7 +151,6 @@ run.bat
 | 模板 | 数据源 | 输出 | 适用场景 |
 |:----:|:------:|:----:|:--------:|
 | `github` | GitHub Trending | 公众号长文 | 技术博主 |
-| `pain` | Twitter + Reddit | 诊断报告 | 产品经理 |
 | `news` | 5 平台汇总 | 资讯快报 | 科技媒体 |
 | `xhs` | 小红书热门 | 种草文章 | 生活博主 |
 | `auto` | 全平台采集 | AI 生活黑客 | 全栈创作 |
@@ -197,7 +199,6 @@ gemini:
 |:------:|:------:|:----:|:----:|:---:|
 | `gemini.api_key` | ✅ | ✅ | ✅ | ✅ |
 | `github.token` | 可选 | - | - | - |
-| `twitter.cookies_path` | - | ✅ | ✅ | - |
 | `xiaohongshu.cookies` | - | - | - | ✅ |
 | `pushplus.token` | 可选 | 可选 | 可选 | 可选 |
 
@@ -289,7 +290,6 @@ API 限流，配置 `github.token` 提高配额（60→5000 次/小时）
 </details>
 
 <details>
-<summary>小红书/Twitter 采集失败？</summary>
 
 需要配置对应平台的 Cookie，详见配置说明
 
@@ -337,6 +337,16 @@ Built and maintained by Swift Tech Co.
 
 AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platforms | Cloud Infrastructure | Cybersecurity | SEO and Marketing | API Integration
 
-**Join the community:** [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+**Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Referral Program](https://swifttechco.com/referral) | [Influencers](https://swifttechco.com/influencers) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
+[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+
+**Connect**
+
+- Website: [swifttechco.com](https://www.swifttechco.com)
+- LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
+- LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
+- X: [@MrOladoke](https://x.com/MrOladoke)
+- Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
+- Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
+- Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
