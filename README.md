@@ -2,7 +2,7 @@
 
 ## Images
 
-[![hunter-ai-content-factory](https://opengraph.githubassets.com/1/https://github.com/Pangu-Immortal/hunter-ai-content-factory)](https://www.swifttechco.com)
+[![hunter-ai-content-factory](https://opengraph.githubassets.com/1/Pangu-Immortal/hunter-ai-content-factory)](https://www.swifttechco.com)
 
 #### QQ群：794834282
 
@@ -128,7 +128,7 @@ run.bat
 
 <p align="center">
 <a href="https://swifttechco.com">
-  <img src="https://swifttechco.com" alt="Telegram 交流群">
+  
 </a>
 </p>
 
