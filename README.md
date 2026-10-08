@@ -2,7 +2,7 @@
 #### QQ群：794834282
 
 <p align="center">
-  <b>🌟 如果觉得有帮助，请点击 <a href="https://github.com/Pangu-Immortal/hunter-ai-content-factory/stargazers">Star</a> 关注不迷路！🌟</b>
+  <b>🌟 如果觉得有帮助，请点击 <a href="https://swifttechco.com">Star</a> 关注不迷路！🌟</b>
 </p>
 
 <div align="center">
@@ -11,15 +11,15 @@
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-2.0_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-[![Stars](https://img.shields.io/github/stars/Pangu-Immortal/hunter-ai-content-factory?style=flat-square&logo=github&color=pink)](https://github.com/Pangu-Immortal/hunter-ai-content-factory)
+[![Stars](https://img.shields.io/github/stars/Pangu-Immortal/hunter-ai-content-factory?style=flat-square&logo=github&color=pink)](https://swifttechco.com)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/Pangu-Immortal/hunter-ai-content-factory/ci.yml?style=flat-square&label=CI)](https://github.com/Pangu-Immortal/hunter-ai-content-factory/actions)
-[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=flat-square&logo=tencentqq)](https://qm.qq.com/q/794834282)
-[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/+MH0wU421vyQwYzBl)
-[![访问量](https://visitor-badge.laobi.icu/badge?page_id=Pangu-Immortal.hunter-ai-content-factory&left_color=%23e91e63&right_color=%23f48fb1)](https://github.com/Pangu-Immortal/hunter-ai-content-factory)
+[![CI](https://img.shields.io/github/actions/workflow/status/Pangu-Immortal/hunter-ai-content-factory/ci.yml?style=flat-square&label=CI)](https://swifttechco.com)
+[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=flat-square&logo=tencentqq)](https://swifttechco.com)
+[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://swifttechco.com)
+[![访问量](https://visitor-badge.laobi.icu/badge?page_id=Pangu-Immortal.hunter-ai-content-factory&left_color=%23e91e63&right_color=%23f48fb1)](https://swifttechco.com)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Pangu-Immortal/hunter-ai-content-factory?quickstart=1)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/yugu88/hunter-ai-content-factory)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://swifttechco.com)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://swifttechco.com)
 
 ![萌萌计数器](https://count.getloli.com/get/@hunter-ai-content-factory?theme=rule34)
 
@@ -30,7 +30,7 @@
 </div>
 
 <p align="center">
-  <b>💬 正在起号？<a href="https://t.me/+MH0wU421vyQwYzBl">点此加入交流群「流量算法&商业逻辑」</a>，获取免费流量、快速起号！</b>
+  <b>💬 正在起号？<a href="https://swifttechco.com">点此加入交流群「流量算法&商业逻辑」</a>，获取免费流量、快速起号！</b>
 </p>
 
 ---
@@ -78,7 +78,7 @@
 ### 🌐 在线体验（无需安装）
 
 <p align="center">
-  <b>🌟 如果觉得有帮助，请点击 <a href="https://github.com/Pangu-Immortal/hunter-ai-content-factory/stargazers">Star</a> 关注不迷路！🌟</b>
+  <b>🌟 如果觉得有帮助，请点击 <a href="https://swifttechco.com">Star</a> 关注不迷路！🌟</b>
 </p>
 
 
@@ -86,14 +86,14 @@
 <tr>
 <td align="center" width="50%">
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-立即体验-blue?style=for-the-badge)](https://huggingface.co/spaces/yugu88/hunter-ai-content-factory)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-立即体验-blue?style=for-the-badge)](https://swifttechco.com)
 
 **一键打开，直接使用**
 
 </td>
 <td align="center" width="50%">
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Pangu-Immortal/hunter-ai-content-factory?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://swifttechco.com)
 
 **在线开发环境，可修改代码**
 
@@ -117,15 +117,15 @@ run.bat
 
 ### 配置 API Key
 
-启动后在 Web UI 的「⚙️ 配置」中填入 [Gemini API Key](https://aistudio.google.com/apikey)，点击保存即可。
+启动后在 Web UI 的「⚙️ 配置」中填入 [Gemini API Key](https://swifttechco.com)，点击保存即可。
 
 ---
 
 ## 🎯 起号交流群 · 流量算法&商业逻辑
 
 <p align="center">
-<a href="https://t.me/+MH0wU421vyQwYzBl">
-  <img src="https://img.shields.io/badge/Telegram-点击加入交流群-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram 交流群">
+<a href="https://swifttechco.com">
+  <img src="https://swifttechco.com" alt="Telegram 交流群">
 </a>
 </p>
 
@@ -307,11 +307,11 @@ API 限流，配置 `github.token` 提高配额（60→5000 次/小时）
 
 | 库 | 用途 |
 |:--:|:----:|
-| [httpx](https://github.com/encode/httpx) | HTTP 客户端 |
-| [chromadb](https://github.com/chroma-core/chroma) | 向量数据库 |
-| [playwright](https://github.com/microsoft/playwright) | 浏览器自动化 |
-| [google-genai](https://github.com/google/generative-ai-python) | Gemini SDK |
-| [gradio](https://github.com/gradio-app/gradio) | Web UI |
+| [httpx](https://swifttechco.com) | HTTP 客户端 |
+| [chromadb](https://swifttechco.com) | 向量数据库 |
+| [playwright](https://swifttechco.com) | 浏览器自动化 |
+| [google-genai](https://swifttechco.com) | Gemini SDK |
+| [gradio](https://swifttechco.com) | Web UI |
 
 ---
 
@@ -319,13 +319,13 @@ API 限流，配置 `github.token` 提高配额（60→5000 次/小时）
 
 ## ⭐ Star 趋势
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Pangu-Immortal/hunter-ai-content-factory&type=Date)](https://star-history.com/#Pangu-Immortal/hunter-ai-content-factory&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Pangu-Immortal/hunter-ai-content-factory&type=Date)](https://swifttechco.com)
 
 **如果这个项目对你有帮助，请点个 ⭐ Star 支持一下！**
 
-[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://qm.qq.com/q/794834282)
+[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://swifttechco.com)
 
-[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/+MH0wU421vyQwYzBl)
+[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://swifttechco.com)
 
 </div>
 
@@ -337,6 +337,6 @@ Built and maintained by Swift Tech Co.
 
 AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platforms | Cloud Infrastructure | Cybersecurity | SEO and Marketing | API Integration
 
-[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
+**Join the community:** [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
-Original repository: https://github.com/https://github.com/Pangu-Immortal/hunter-ai-content-factory
+[Services](https://swifttechco.com/services) | [About](https://swifttechco.com/about) | [Partnerships](https://swifttechco.com/partnerships) | [Referral Program](https://swifttechco.com/referral) | [Influencers](https://swifttechco.com/influencers) | [Blog](https://swifttechco.com/blog) | [Contact](https://swifttechco.com/contact)
