@@ -1,0 +1,65 @@
+"""
+摆渡人AI系统 - 主应用组装
+
+组装所有组件和 Tab，创建完整的 Gradio 应用
+"""
+
+import gradio as gr
+
+from .components import create_footer, create_header
+from .components.footer import create_divider
+from .constants import CUSTOM_CSS
+from .tabs import (
+    create_auto_tab,
+    create_check_tab,
+    create_github_tab,
+    create_intro_tabs,
+    create_news_tab,
+    create_pain_tab,
+    create_settings_tab,
+    create_xhs_tab,
+)
+
+
+def create_app():
+    """创建 Gradio 应用
+
+    Returns:
+        gr.Blocks: 完整的 Gradio 应用实例
+    """
+
+    # Gradio 6.x: CSS 必须在 gr.Blocks() 中传递才能生效
+    with gr.Blocks(title="摆渡人AI系统", css=CUSTOM_CSS) as app:
+        # ═══════════════════════════════════════════════════════════════════
+        # 顶部标题
+        # ═══════════════════════════════════════════════════════════════════
+        create_header()
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 上部功能区 - 7 个核心功能 Tab
+        # ═══════════════════════════════════════════════════════════════════
+        with gr.Tabs():
+            create_github_tab()  # 🔥 GitHub 爆款
+            create_pain_tab()  # 💊 痛点诊断
+            create_news_tab()  # 📰 热点快报
+            create_xhs_tab()  # 📕 小红书种草
+            create_auto_tab()  # 🚀 全自动生产
+            create_check_tab()  # 🔍 内容审核
+            create_settings_tab()  # ⚙️ 设置
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 分隔线
+        # ═══════════════════════════════════════════════════════════════════
+        create_divider()
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 下部介绍区 - 首页 + 6 个 Skill 介绍
+        # ═══════════════════════════════════════════════════════════════════
+        create_intro_tabs()
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 页脚
+        # ═══════════════════════════════════════════════════════════════════
+        create_footer()
+
+    return app

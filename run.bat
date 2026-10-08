@@ -1,0 +1,241 @@
+@echo off
+chcp 65001 >nul
+setlocal enabledelayedexpansion
+
+:: ═══════════════════════════════════════════════════════════════════════════════
+:: Hunter AI 内容工厂 - Windows 零配置一键启动脚本
+::
+:: 特点：
+:: - 空白电脑双击即可运行，无需任何预装环境
+:: - 自动下载并安装 uv 包管理器（到项目目录）
+:: - 自动下载并安装 Python 3.12（由 uv 管理）
+:: - 自动安装项目依赖
+:: - 启动 Gradio Web UI 并自动打开浏览器
+::
+:: GitHub: https://github.com/Pangu-Immortal/hunter-ai-content-factory
+:: Author: Pangu-Immortal
+:: ═══════════════════════════════════════════════════════════════════════════════
+
+title Hunter AI 内容工厂 - 初始化中...
+
+:: 切换到脚本所在目录
+cd /d "%~dp0"
+
+:: 设置本地路径
+set "LOCAL_UV=%~dp0.local\uv"
+set "UV_EXE=%LOCAL_UV%\uv.exe"
+set "PATH=%LOCAL_UV%;%PATH%"
+
+echo.
+echo  ╔═══════════════════════════════════════════════════════════╗
+echo  ║                                                           ║
+echo  ║     🦅 Hunter AI 内容工厂                                 ║
+echo  ║                                                           ║
+echo  ║     一键生成高质量公众号文章的 AI 工作流                  ║
+echo  ║                                                           ║
+echo  ║     首次运行需要下载环境，请耐心等待...                   ║
+echo  ║                                                           ║
+echo  ╚═══════════════════════════════════════════════════════════╝
+echo.
+
+:: ─────────────────────────────────────────────────────────────────────────────
+:: Step 1: 检查/安装 uv（本地安装，不污染系统）
+:: ─────────────────────────────────────────────────────────────────────────────
+echo [1/6] 检查 uv 包管理器...
+
+:: 首先检查本地 uv
+if exist "%UV_EXE%" (
+    echo    ✅ 本地 uv 已存在
+    goto :check_python
+)
+
+:: 检查系统 uv
+where uv >nul 2>&1
+if %errorlevel% equ 0 (
+    echo    ✅ 系统 uv 已安装
+    set "UV_EXE=uv"
+    goto :check_python
+)
+
+:: 下载并安装 uv 到本地目录
+echo    ⏳ 正在下载 uv 包管理器...
+echo       （首次运行，请稍候约 1-2 分钟）
+
+:: 创建本地目录
+if not exist "%LOCAL_UV%" mkdir "%LOCAL_UV%"
+
+:: 使用 PowerShell 下载 uv
+powershell -ExecutionPolicy Bypass -Command ^
+    "$ProgressPreference = 'SilentlyContinue'; " ^
+    "try { " ^
+    "    $url = 'https://github.com/astral-sh/uv/releases/latest/download/uv-x86_64-pc-windows-msvc.zip'; " ^
+    "    $zip = '%TEMP%\uv.zip'; " ^
+    "    $dest = '%LOCAL_UV%'; " ^
+    "    Write-Host '       下载中...'; " ^
+    "    Invoke-WebRequest -Uri $url -OutFile $zip -UseBasicParsing; " ^
+    "    Write-Host '       解压中...'; " ^
+    "    Expand-Archive -Path $zip -DestinationPath $dest -Force; " ^
+    "    Remove-Item $zip -Force; " ^
+    "    Write-Host '       完成!'; " ^
+    "} catch { " ^
+    "    Write-Host '下载失败，请检查网络连接'; " ^
+    "    exit 1; " ^
+    "}"
+
+if not exist "%UV_EXE%" (
+    echo.
+    echo ❌ uv 下载失败！
+    echo    请检查网络连接，或手动下载：
+    echo    https://github.com/astral-sh/uv/releases
+    echo.
+    pause
+    exit /b 1
+)
+
+echo    ✅ uv 下载完成
+
+:check_python
+:: ─────────────────────────────────────────────────────────────────────────────
+:: Step 2: 检查/安装 Python（由 uv 管理）
+:: ─────────────────────────────────────────────────────────────────────────────
+echo.
+echo [2/6] 检查 Python 环境...
+
+:: 使用 uv 检查并安装 Python
+"%UV_EXE%" python find 3.12 >nul 2>&1
+if %errorlevel% neq 0 (
+    echo    ⏳ 正在下载 Python 3.12...
+    echo       （首次运行，请稍候约 2-3 分钟）
+    "%UV_EXE%" python install 3.12 --quiet
+    if %errorlevel% neq 0 (
+        echo.
+        echo ❌ Python 下载失败！
+        echo    请检查网络连接
+        echo.
+        pause
+        exit /b 1
+    )
+)
+
+for /f "tokens=*" %%i in ('"%UV_EXE%" python find 3.12 2^>nul') do set PYTHON_PATH=%%i
+echo    ✅ Python 3.12 就绪
+
+:: ─────────────────────────────────────────────────────────────────────────────
+:: Step 3: 检查配置文件
+:: ─────────────────────────────────────────────────────────────────────────────
+echo.
+echo [3/6] 检查配置文件...
+
+if not exist "config.yaml" (
+    if exist "config.example.yaml" (
+        echo    ⏳ 创建配置文件...
+        copy "config.example.yaml" "config.yaml" >nul
+        echo    ✅ 已创建 config.yaml
+        echo.
+        echo    ════════════════════════════════════════════════════════════
+        echo    ⚠️ 重要提示：首次运行请先配置 API Key！
+        echo.
+        echo       1. 用记事本打开项目目录下的 config.yaml
+        echo       2. 填写 gemini.api_key（必填，从 Google AI Studio 获取）
+        echo       3. 其他配置可选填
+        echo    ════════════════════════════════════════════════════════════
+        echo.
+    ) else (
+        echo    ⚠️ 未找到配置文件模板
+    )
+) else (
+    echo    ✅ config.yaml 已存在
+)
+
+:: ─────────────────────────────────────────────────────────────────────────────
+:: Step 4: 安装依赖
+:: ─────────────────────────────────────────────────────────────────────────────
+echo.
+echo [4/6] 安装项目依赖...
+
+:: 使用 uv 同步依赖（强制使用 Python 3.12）
+"%UV_EXE%" sync --python 3.12 --python-preference only-managed --quiet 2>nul
+if %errorlevel% neq 0 (
+    echo    ⏳ 首次安装依赖，请稍候...
+    "%UV_EXE%" sync --python 3.12 --python-preference only-managed
+    if %errorlevel% neq 0 (
+        echo.
+        echo ❌ 依赖安装失败！
+        echo    请检查网络连接
+        echo.
+        pause
+        exit /b 1
+    )
+)
+echo    ✅ 依赖已安装
+
+:: ─────────────────────────────────────────────────────────────────────────────
+:: Step 5: 安装 Playwright 浏览器（用于小红书采集）
+:: ─────────────────────────────────────────────────────────────────────────────
+echo.
+echo [5/6] 检查浏览器驱动...
+
+:: 检查 Playwright 浏览器是否已安装（通过检查缓存目录）
+set "PLAYWRIGHT_BROWSERS=%LOCALAPPDATA%\ms-playwright"
+if exist "%PLAYWRIGHT_BROWSERS%\chromium-*" (
+    echo    ✅ 浏览器驱动已安装
+    goto :start_gradio
+)
+
+:: 首次安装 - 显示下载进度
+echo    ⏳ 首次运行，正在下载浏览器驱动...
+echo       （Chromium 约 150MB，请耐心等待 3-10 分钟）
+echo       （如果长时间无响应，请检查网络连接或防火墙设置）
+echo.
+
+"%UV_EXE%" run --python 3.12 --python-preference only-managed playwright install chromium
+
+if %errorlevel% neq 0 (
+    echo.
+    echo    ⚠️ 浏览器驱动安装失败，但不影响基本功能
+    echo       小红书采集功能将不可用
+    echo       如需使用，请手动运行: uv run playwright install chromium
+    echo.
+) else (
+    echo    ✅ 浏览器驱动安装完成
+)
+
+:start_gradio
+
+:: ─────────────────────────────────────────────────────────────────────────────
+:: Step 6: 启动 Gradio
+:: ─────────────────────────────────────────────────────────────────────────────
+echo.
+echo [6/6] 启动 Web UI...
+
+title Hunter AI 内容工厂 - 运行中
+
+echo.
+echo ═══════════════════════════════════════════════════════════════════════════
+echo.
+echo    🚀 Hunter AI 正在启动...
+echo.
+echo    本地访问:    http://localhost:7860
+echo    局域网访问:  http://你的IP:7860
+echo    外链分享:    启动后会显示公网链接
+echo.
+echo    ⚡ 浏览器将自动打开，如果没有请手动访问上述地址
+echo.
+echo    按 Ctrl+C 停止服务
+echo.
+echo ═══════════════════════════════════════════════════════════════════════════
+echo.
+
+:: 延迟打开浏览器（等待服务启动）
+start "" cmd /c "timeout /t 5 /nobreak >nul && start http://localhost:7860"
+
+:: 启动 Gradio（使用 Python 3.12）
+"%UV_EXE%" run --python 3.12 --python-preference only-managed python -m src.gradio_launcher
+
+:: 如果异常退出
+echo.
+echo ════════════════════════════════════════════════════════════════
+echo    服务已停止
+echo    按任意键关闭窗口...
+echo ════════════════════════════════════════════════════════════════
+pause >nul
