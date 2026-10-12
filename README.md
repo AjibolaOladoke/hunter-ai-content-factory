@@ -6,13 +6,13 @@ We keep a working index for product and engineering, and hunter-ai-content-facto
 
 ## Images
 
-[![hunter-ai-content-factory](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![hunter-ai-content-factory](images/preview.png)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
 ## 📺 界面预览
 
 <div align="center">
 
-[![Hunter AI 界面](preview2.png)](https://www.swifttechco.com)
+[![Hunter AI 界面](preview2.png)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
 </div>
 
@@ -50,22 +50,21 @@ We keep a working index for product and engineering, and hunter-ai-content-facto
 ### 🌐 在线体验（无需安装）
 
 <p align="center">
-  <b>🌟 如果觉得有帮助，请点击 <a href="https://swifttechco.com">Star</a> 关注不迷路！🌟</b>
+  <b>🌟 如果觉得有帮助，请点击 <a href="https://github.com/Swift-Tech-Co/hunter-ai-content-factory">Star</a> 关注不迷路！🌟</b>
 </p>
-
 
 <table>
 <tr>
 <td align="center" width="50%">
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-立即体验-blue?style=for-the-badge)](https://swifttechco.com)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-立即体验-blue?style=for-the-badge)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
 **一键打开，直接使用**
 
 </td>
 <td align="center" width="50%">
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://swifttechco.com)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
 **在线开发环境，可修改代码**
 
@@ -96,7 +95,7 @@ run.bat
 ## 🎯 起号交流群 · 流量算法&商业逻辑
 
 <p align="center">
-<a href="https://swifttechco.com">
+<a href="https://github.com/Swift-Tech-Co/hunter-ai-content-factory">
   
 </a>
 </p>
@@ -288,13 +287,13 @@ API 限流，配置 `github.token` 提高配额（60→5000 次/小时）
 
 ## ⭐ Star 趋势
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Pangu-Immortal/hunter-ai-content-factory&type=Date)](https://swifttechco.com)
+[![Star History Chart](https://api.star-history.com/svg?repos=Pangu-Immortal/hunter-ai-content-factory&type=Date)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
 **如果这个项目对你有帮助，请点个 ⭐ Star 支持一下！**
 
-[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://swifttechco.com)
+[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
-[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://swifttechco.com)
+[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://github.com/Swift-Tech-Co/hunter-ai-content-factory)
 
 </div>
 
@@ -312,13 +311,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/hunter-ai-content-factory
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [Pangu-Immortal/hunter-ai-content-factory](https://github.com/Pangu-Immortal/hunter-ai-content-factory) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
