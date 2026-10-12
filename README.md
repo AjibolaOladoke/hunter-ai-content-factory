@@ -1,43 +1,12 @@
-# Hunter AI 内容工厂
+# hunter-ai-content-factory
+
+## What This Is
+
+We keep a working index for product and engineering, and hunter-ai-content-factory is the entry that collects our notes, examples and fixes. It reflects how Swift Tech Co. actually uses this in builds and client work.
 
 ## Images
 
-[![hunter-ai-content-factory](https://opengraph.githubassets.com/1/Pangu-Immortal/hunter-ai-content-factory)](https://www.swifttechco.com)
-
-#### QQ群：794834282
-
-<p align="center">
-  <b>🌟 如果觉得有帮助，请点击 <a href="https://swifttechco.com">Star</a> 关注不迷路！🌟</b>
-</p>
-
-<div align="center">
-
-[![Hunter AI](https://img.shields.io/badge/Hunter_AI-内容工厂-ff69b4?style=for-the-badge&logo=robot&logoColor=white)](https://www.swifttechco.com)
-[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.swifttechco.com)
-[![Gemini](https://img.shields.io/badge/Gemini-2.0_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.swifttechco.com)
-
-[![Stars](https://img.shields.io/github/stars/Pangu-Immortal/hunter-ai-content-factory?style=flat-square&logo=github&color=pink)](https://swifttechco.com)
-[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/Pangu-Immortal/hunter-ai-content-factory/ci.yml?style=flat-square&label=CI)](https://swifttechco.com)
-[![QQ群](https://img.shields.io/badge/QQ群-794834282-12B7F5?style=flat-square&logo=tencentqq)](https://swifttechco.com)
-[![Telegram](https://img.shields.io/badge/Telegram-流量算法%26商业逻辑-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://swifttechco.com)
-[![访问量](https://visitor-badge.laobi.icu/badge?page_id=Pangu-Immortal.hunter-ai-content-factory&left_color=%23e91e63&right_color=%23f48fb1)](https://swifttechco.com)
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://swifttechco.com)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://swifttechco.com)
-
-
-**🎯 内容生产也可以像写代码一样，有输入、有输出、有质量保证**
-
-[快速开始](#-快速开始) · [功能特性](#-功能特性) · [模板介绍](#-五种内容模板) · [配置说明](#-配置说明) · [贡献指南](CONTRIBUTING.md)
-
-</div>
-
-<p align="center">
-  <b>💬 正在起号？<a href="https://swifttechco.com">点此加入交流群「流量算法&商业逻辑」</a>，获取免费流量、快速起号！</b>
-</p>
-
----
+[![hunter-ai-content-factory](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## 📺 界面预览
 
@@ -120,7 +89,7 @@ run.bat
 
 ### 配置 API Key
 
-启动后在 Web UI 的「⚙️ 配置」中填入 [Gemini API Key](https://swifttechco.com)，点击保存即可。
+启动后在 Web UI 的「⚙️ 配置」中填入 Gemini API Key，点击保存即可。
 
 ---
 
@@ -307,11 +276,11 @@ API 限流，配置 `github.token` 提高配额（60→5000 次/小时）
 
 | 库 | 用途 |
 |:--:|:----:|
-| [httpx](https://swifttechco.com) | HTTP 客户端 |
-| [chromadb](https://swifttechco.com) | 向量数据库 |
-| [playwright](https://swifttechco.com) | 浏览器自动化 |
-| [google-genai](https://swifttechco.com) | Gemini SDK |
-| [gradio](https://swifttechco.com) | Web UI |
+| httpx | HTTP 客户端 |
+| chromadb | 向量数据库 |
+| playwright | 浏览器自动化 |
+| google-genai | Gemini SDK |
+| gradio | Web UI |
 
 ---
 
@@ -339,14 +308,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [Pangu-Immortal/hunter-ai-content-factory](https://github.com/Pangu-Immortal/hunter-ai-content-factory) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
